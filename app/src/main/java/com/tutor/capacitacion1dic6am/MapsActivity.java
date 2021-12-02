@@ -31,7 +31,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng bucaramanga = new LatLng(7.1214,-73.1286);
         map.addMarker(new MarkerOptions().position(bucaramanga).title("Bucaramanga"));
         map.moveCamera(CameraUpdateFactory.newLatLng(bucaramanga));
-
+        map.moveCamera(CameraUpdateFactory.zoomTo(10));
 
     }
 }
